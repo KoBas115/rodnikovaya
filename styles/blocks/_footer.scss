@@ -1,0 +1,134 @@
+.footer {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    @include from-tablet {
+        padding-left: 16px;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    @include from-notebook {
+        justify-content: end;
+        padding-left: 0;
+    }
+    .request__fields {
+        margin: 0;
+    }
+    .request__form {
+        max-width: 282px;
+    }
+    .request__input {
+        border: 1px solid var(--gold);
+    }
+    .request__agreement {
+        width: 100%;
+    }
+    .request__input_wrap {
+        padding: 0;
+        @include from-tablet {
+            width: 100%;
+        }
+    }
+    .container {
+        @include from-tablet {
+            padding: 0;
+        }
+        @include from-notebook {
+            padding: 0;
+        }
+    }
+}
+
+.title-footer {
+    font-size: var(--fs-22);
+    color: var(--gold);
+
+    @include from-tablet {
+        font-size: var(--fs-32);
+    }
+
+    @include from-notebook {
+        font-size: var(--fs-48);
+    }
+}
+
+.footer__content {
+    @include from-tablet {
+        max-width: 282px;
+    }
+    @include from-notebook {
+        width: 100%;
+        max-width: 312px;
+        margin-right: 150px;
+    }
+    
+    @include from-desktop {
+        // max-width: 514px;
+        // margin-right: 120px;
+    }
+}
+
+.footer__item-adress {
+    margin-bottom: 24px;
+}
+
+.footer__item-phone {
+    @include from-tablet {
+        margin-bottom: 24px;
+    }
+}
+
+.footer__img-mobile-wrap {
+    @include from-tablet {
+        display: none;
+    }
+}
+
+.footer__img-mobile {
+    margin: 24px 0;
+}
+
+.footer__item-top {
+    margin-bottom: 12px;
+    color: var(--blue);
+    opacity: .6;
+}
+
+.footer__item-bottom {
+    color: var(--blue);
+}
+
+.footer__img-desktop {
+    height: 544px;
+    object-fit: cover;
+    object-position: left;
+}
+
+.footer__img-wrap {
+    @include from-tablet {
+        max-width: 50.9%;
+
+    }
+    @include from-notebook {
+        max-width: 56%;
+    }
+}
+
+.footer__img {
+    display: none;
+    object-fit: cover;
+    max-width: none;
+    width: 100%;
+    @include from-tablet {
+        display: block;
+        height: 518px;
+        object-position: left;
+    }
+
+    @include from-notebook {
+        max-width: 100%;
+        height: 544px;
+    }
+}

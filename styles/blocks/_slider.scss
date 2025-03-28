@@ -1,0 +1,66 @@
+.slider-btn {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color .2s ease;
+    background-color: transparent;
+    .slider-btn__icon {
+        width: 22px;
+        height: 22px;
+        stroke: transparent;
+        transition: stroke 0.2s ease;
+        pointer-events: none;
+    }
+}
+.slider-btn__prev .slider-btn__icon {
+    transform: rotate(180deg);
+}
+.slider-btn__white {
+    border: 1px solid var(--gold);
+    background-color: var(--white-main);
+    .slider-btn__icon {
+        stroke: var(--gold);
+    }
+    &:hover {
+        border: 1px solid var(--white-main);
+        background-color: var(--gold);
+        .slider-btn__icon {
+            stroke: var(--white-main);
+        }
+    }
+    &:active {
+        background-color: var(--light-gray);
+        .slider-btn__icon {
+            stroke: var(--white-main);
+        }
+    }
+}
+.slider-btn__gold {
+    background-color: var(--gold);
+    border: solid 1px var(--white-main);
+    .slider-btn__icon {
+        stroke: var(--white-main);
+    }
+    &:hover {
+        background-color: var(--white-main);
+        .slider-btn__icon {
+            stroke: var(--gold);
+        }
+    }
+    &:active {
+        background-color: var(--light-gray);
+        .slider-btn__icon {
+            stroke: var(--gold);
+        }
+    }
+}
+.slider-btn.swiper-button-disabled { 
+    opacity: .6;
+    cursor: auto;
+    pointer-events: none;
+}

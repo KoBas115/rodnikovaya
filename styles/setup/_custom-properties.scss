@@ -1,0 +1,63 @@
+:root {
+    /* ---------- Sizes ---------- */
+    --html-min-width: 360px;
+    --html-max-width: 1920px;
+    --container: 1160px;
+
+    /* ---------- Colors ---------- */
+    --white-main: #FCFAF3;
+    --blue: #305B67;
+    --gold: #C39B54;
+    --gray: #688185;
+    --light-gray: #E0DDD2;
+    --black: #222222;
+
+    --error: #ff0000;
+
+    --bg-1: #E0DDD2;
+    --bg-2: #33466b;
+
+    /* ---------- Font Size ---------- */
+    --font-size-tiny: 11px;
+    @include from-laptop {
+        --font-size-tiny: 12px;
+    }
+
+    --font-size-small: 13px;
+    @include from-laptop {
+        --font-size-small: 14px;
+    }
+
+    --font-size-medium: 14px;
+    @include from-laptop {
+        --font-size-medium: 15px;
+    }
+
+    --font-size-normal: 16px;
+    @include from-laptop {
+        --font-size-medium: 17px;
+    }
+
+    --font-size-large: 17px;
+    @include from-laptop {
+        --font-size-large: 19px;
+    }
+
+    --font-size-big: 21px;
+    @include from-laptop {
+        --font-size-big: 25px;
+    }
+
+    --font-size-huge: 24px;
+    @include from-laptop {
+        --font-size-huge: 29px;
+    }
+
+    /* ---------- Radius ---------- */
+    --radius-main: 16px;
+
+    /* ---------- Typography ---------- */
+    --font-helper: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family: "Exo 2", var(--font-helper);
+    --family-titles: "Jost", var(--font-helper);
+}

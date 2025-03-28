@@ -1,0 +1,11 @@
+<svg class="safety__svg safety__svg-notebook" viewBox="0 0 1200 673" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="1022" cy="361" r="24" fill="#C39B54"/>
+    <path d="M1031 361H1013" stroke="#FCFAF3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M1022 352V370" stroke="#FCFAF3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="793" cy="182" r="24" fill="#C39B54"/>
+    <path d="M802 182H784" stroke="#FCFAF3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M793 173V191" stroke="#FCFAF3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="888" cy="313" r="24" fill="#C39B54"/>
+    <path d="M897 313H879" stroke="#FCFAF3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M888 304V322" stroke="#FCFAF3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

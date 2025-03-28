@@ -1,0 +1,20 @@
+.page-error {
+    text-align: center;
+}
+.page-error__title {
+    margin: 40px 0;
+    font-size: 32px;
+    font-weight: bold;
+}
+.page-error__text {
+    display: block;
+    font-size: 21px;
+}
+.page-error__picture, .page-error__image {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+.page-error__text, .page-error__btn, .page-error__picture {
+    margin: 0 0 40px 0;
+}

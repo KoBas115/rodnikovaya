@@ -1,0 +1,14 @@
+.DS_store
+/.idea/
+/.vscode/
+/node_modules/
+cache/
+/vendor/
+/dist/
+.env
+.env.dev
+Makefile
+composer.lock
+package-lock.json
+.editorconfig
+/.osp/

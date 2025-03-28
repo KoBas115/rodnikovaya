@@ -1,0 +1,20 @@
+{
+    "name": "intopweb/template-lp",
+    "type": "project",
+    "require": {
+        "php": "7.4.*",
+        "smarty/smarty": "^v4.5.2",
+        "vlucas/phpdotenv": "^v5.6.0",
+        "ext-mysqli": "*",
+        "ext-json": "*",
+        "ext-curl": "*",
+        "ext-mbstring": "*",
+        "ext-imagick": "*",
+        "ext-ftp": "*",
+        "ext-zlib": "*",
+        "ext-simplexml": "*",
+        "ext-iconv": "*",
+        "ext-intl": "*"
+    },
+    "description": "Шаблон лендинга для старта проекта"
+}
