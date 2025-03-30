@@ -1,12 +1,13 @@
 /* Breakpoints */
-// < 382 - mobile
-$smartphone-width: 382px;   // from-smartphone
+// < 320 - mobile
+$mobile-width: 320px;       // from-mobile
+$smartphone-width: 420px;   // from-smartphone
 $fablet-width: 568px;       // from-fablet
 $tablet-width: 768px;       // from-tablet
-$laptop-width: 1100px;      // from-laptop
-$notebook-width: 1200px;    // from-notebook
-$desktop-width: 1328px;     // from-desktop
+$laptop-width: 900px;       // from-laptop
+$notebook-width: 1100px;    // from-notebook
+$desktop-width: 1200px;     // from-desktop
 
 /* Sizes */
-$html-min-width: 375px;
+$html-min-width: 320px;
 $html-max-width: 1920px;

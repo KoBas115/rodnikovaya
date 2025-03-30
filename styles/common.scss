@@ -2,11 +2,12 @@
 @import "./setup/variables";
 @import "./setup/mixins";
 @import "./setup/custom-properties";
-@import "./setup/helpers";
 
 @import "./lib/swiper-bundle";
 
-@import "./blocks/page";
+@import "./common/common";
+@import "./common/page";
+
 @import "./blocks/titles";
 @import "./blocks/buttons";
 @import "./blocks/input";
@@ -16,7 +17,7 @@
 @import "./blocks/burger";
 
 @import "./modals/modal";
-@import "./modals/intop.slider";
+// @import "./modals/intop.slider";
 @import "./modals/thanks";
 @import "./modals/privacy";
 @import "./modals/request";

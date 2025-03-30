@@ -1,63 +1,32 @@
 :root {
     /* ---------- Sizes ---------- */
-    --html-min-width: 360px;
+    --html-min-width: 320px;
     --html-max-width: 1920px;
-    --container: 1160px;
+    --container: 1200px;
 
     /* ---------- Colors ---------- */
-    --white-main: #FCFAF3;
-    --blue: #305B67;
-    --gold: #C39B54;
-    --gray: #688185;
-    --light-gray: #E0DDD2;
-    --black: #222222;
+    --color-1: #305B67;     // Цвет текста
+    --color-2: #FDFBF5;     // Цвет фона
+    --color-3: #;     //
+    --color-4: #;     // текст
+    --color-5: #;     // фон
 
     --error: #ff0000;
 
-    --bg-1: #E0DDD2;
-    --bg-2: #33466b;
-
     /* ---------- Font Size ---------- */
-    --font-size-tiny: 11px;
-    @include from-laptop {
-        --font-size-tiny: 12px;
-    }
-
-    --font-size-small: 13px;
-    @include from-laptop {
-        --font-size-small: 14px;
-    }
-
-    --font-size-medium: 14px;
-    @include from-laptop {
-        --font-size-medium: 15px;
-    }
-
-    --font-size-normal: 16px;
-    @include from-laptop {
-        --font-size-medium: 17px;
-    }
-
-    --font-size-large: 17px;
-    @include from-laptop {
-        --font-size-large: 19px;
-    }
-
-    --font-size-big: 21px;
-    @include from-laptop {
-        --font-size-big: 25px;
-    }
-
-    --font-size-huge: 24px;
-    @include from-laptop {
-        --font-size-huge: 29px;
-    }
-
-    /* ---------- Radius ---------- */
-    --radius-main: 16px;
+    // --font-size-small-maxi: 12px;
+    // --font-size-medium-mini: 14px;
+    --font-size-medium: 16px;
+    // --font-size-medium-semi: 18px;
+    // --font-size-large-mini: 22px;
+    // --font-size-big-mini: 28px;
+    // --font-size-big: 30px;
+    // --font-size-big-semi: 32px;
+    // --font-size-giant: 48px;
 
     /* ---------- Typography ---------- */
     --font-helper: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --font-family: "Exo 2", var(--font-helper);
-    --family-titles: "Jost", var(--font-helper);
+    --font-family-1: "Exo2", var(--font-helper);
+    --font-family-2: "TenorSans", var(--font-helper);
+    --font-family-3: "Hauora", var(--font-helper);
 }

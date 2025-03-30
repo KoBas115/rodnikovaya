@@ -12,7 +12,13 @@
         }
     }
 }
-// from 382
+// from 320
+@mixin from-mobile {
+    @media (min-width: $mobile-width) {
+        @content;
+    }
+}
+// from 420
 @mixin from-smartphone {
     @media (min-width: $smartphone-width) {
         @content;
@@ -24,60 +30,27 @@
         @content;
     }
 }
-@mixin to-fablet {
-    @media (max-width: $fablet-width - 1px) {
-        @content;
-    }
-}
 // from 768
 @mixin from-tablet {
     @media (min-width: $tablet-width) {
         @content;
     }
 }
-@mixin to-tablet {
-    @media (max-width: $tablet-width - 1px) {
-        @content;
-    }
-}
-// from 1100
+// from 900
 @mixin from-laptop {
     @media (min-width: $laptop-width) {
         @content;
     }
 }
-@mixin to-laptop {
-    @media (max-width: $laptop-width - 1px) {
-        @content;
-    }
-}
-// from 1200
+// from 1100
 @mixin from-notebook {
     @media (min-width: $notebook-width) {
         @content;
     }
 }
-// from 1328
+// from 1200
 @mixin from-desktop {
     @media (min-width: $desktop-width) {
         @content;
-    }
-}
-@mixin vh($argument, $percent) {
-    #{$argument}: #{$percent}vh;
-    #{$argument}: calc(var(--vh, 1vh) * $percent);
-}
-@mixin flex($display: flex, $dir: row, $wrap: nowrap, $jc: center, $ai: center) {
-    display: $display;
-    flex-direction: $dir;
-    flex-wrap: $wrap;
-    justify-content: $jc;
-    align-items: $ai;
-}
-@mixin hover {
-    @media (hover: hover) {
-        &:hover {
-            @content;
-        }
     }
 }
