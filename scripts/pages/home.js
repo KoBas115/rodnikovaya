@@ -1,25 +1,17 @@
-import {crossBrowserObserver} from "../functions/observer";
-import {arcticmodal_settings} from "../functions/modal";
+import { arcticmodal_settings } from "../functions/modal";
 
-// ============ первый блок
+/* --------------------- Блок Hero ------------------------------------  */
 
-const heroSlider = new Swiper(".hero__swiper", {
+const heroSlider = new Swiper(".hero-slider .swiper", {
+    roundLengths: true,
+    watchOverflow: true,
+    slidesPerView: 1,
     slidesPerGroup: 1,
-    effect: "creative",
-    speed: 1000,
-    // loop: true,
-    creativeEffect: {
-        prev: {
-            opacity: 0.1,
-            shadow: true,
-            translate: ["-20%", 0, -1],
-        },
-        next: {
-            translate: ["100%", 0, 0],
-        },
-    },
+    speed: 1200,
+    loop: true,
+    loopedSlides: 3,
+    spaceBetween: 0,
     autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
+        delay: 5000,
     },
 });
