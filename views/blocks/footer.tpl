@@ -1,4 +1,8 @@
-<section class="section section-footer">
+<footer class="footer">
+    <h2>footer</h2>
+</footer>
+
+{* <section class="section section-footer">
     <div class="footer">
         <div class="footer__content">
             <div class="container">
@@ -61,4 +65,4 @@
                 > 
         </picture>
     </div>
-</section>
+</section> *}

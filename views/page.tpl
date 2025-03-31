@@ -46,7 +46,7 @@
 
     {* {include "blocks/burger.tpl"} *}
 
-    {* {include "blocks/header.tpl" class= "page__header page__header_{$page->eng}"} *}
+    {include "blocks/header.tpl" class= "page__header page__header_{$page->eng}"}
 
     {* Основной контент страницы *}
     <main class="{$page->eng} page__main page__main_{$page->eng}">
@@ -54,9 +54,9 @@
     </main>
 
     {* Футер страницы *}
-    {* {include "blocks/footer.tpl" footer=[
+    {include "blocks/footer.tpl" footer=[
             "class" => "page__footer page__footer_{$page->eng}"
-    ]} *}
+    ]}
 
     {* Модалки *}
     <!--noindex-->
