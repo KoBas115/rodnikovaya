@@ -1,15 +1,14 @@
 .title {
     text-transform: uppercase;
-    font-family: var(--family-titles);
-    line-height: normal;
-    font-size: var(--fs-22);
-    line-height: 29.216px;
+    font-family: var(--font-family-2);
+    font-size: var(--font-size-large-mini);
+    line-height: 132%;
+    text-align: center; 
     @include from-tablet {
-        font-size: var(--fs-32);
+        font-size: var(--font-size-big-semi);
     }
     @include from-notebook {
-        font-size: var(--fs-48);
-        line-height: 63.744px;
+        font-size: var(--font-size-giant);
     }
 }
 
