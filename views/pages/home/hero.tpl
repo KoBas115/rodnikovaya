@@ -12,6 +12,7 @@
                         <img class="image" src="#" data-src="/img/images/hero/home-hero-bg001@2x.jpg" alt="баннер"
                             width="1920" height="860" loading="lazy" decoding="async">
                     </picture>
+                    <div class="swiper-slide__filter"></div>
                     <h2 class="title hero__title">квартиры с&nbsp;видами на&nbsp;море и&nbsp;горно-&nbsp;лесные массивы
                     </h2>
                 </div>
@@ -25,6 +26,7 @@
                         <img class="image" src="#" data-src="/img/images/hero/home-hero-bg002@2x.jpg" alt="баннер"
                             width="1920" height="860" loading="lazy" decoding="async">
                     </picture>
+                    <div class="swiper-slide__filter"></div>
                     <h2 class="title hero__title">Южное побережье крымского полуострова</h2>
                 </div>
                 <div class="swiper-slide">
@@ -37,32 +39,48 @@
                         <img class="image" src="#" data-src="/img/images/hero/home-hero-bg003@2x.jpg" alt="баннер"
                             width="1920" height="860" loading="lazy" decoding="async">
                     </picture>
+                    <div class="swiper-slide__filter"></div>
                     <h2 class="title hero__title">безопасный двор с&nbsp;умной системой доступа</h2>
                 </div>
             </div>
-            {* <button class="btn slider-btn slider-btn__prev" type="button">
-                {include "components/icon.tpl" icon=["file" => "icons", "class" => "slider-btn__icon", "name" => "slider-arrow-prev"]}
-            </button>
-            <button class="btn slider-btn slider-btn__next" type="button">
-                {include "components/icon.tpl" icon=["file" => "icons", "class" => "slider-btn__icon", "name" => "slider-arrow-next"]}
-            </button> *}
         </div>
         {* <div class="slider-pagination"></div> *}
     </div>
-    {* <picture>
-        <source srcset="/img/images/hero/home-hero-bg001@1x.webp" media="(max-width: 767px)" type="image/webp">
-        <source srcset="/img/images/hero/home-hero-bg001@1x.jpg" media="(max-width: 767px)">
-        <source srcset="/img/images/hero/home-hero-bg001@2x.webp" type="image/webp">
-        <img class="image" src="/img/images/hero/home-hero-bg001@2x.jpg"
-            alt="квартиры с видами на море и горно-лесные массивы" width="1920" height="720" loading="lazy"
-            decoding="async">
-    </picture> *}
 
 
     <div class="container hero__content">
-        <div class="hero__content-wrap">
-            {* <h2 class="title hero__title">квартиры с видами на море и горно-лесные массивы</h2> *}
-            <a class="btn btn-default btn-gold-gold-blue-blue hero__btn" href="/podbor">Подобрать квартиру</a>
+        <a class="btn btn-default btn-gold-gold-blue-blue hero__btn" href="/podbor">Подобрать квартиру</a>
+        <div class="hero__content-wrap g-lazy-img">
+            <div class="hero__content-item">
+                <div class="hero__content-title">Симферополь</div>
+                <div class="hero__content-text">1 час</div>
+                <picture>
+                    <source srcset="#" data-src="/img/images/hero/home-hero-ava001.webp" type="image/webp">
+                    <img class="image" src="#" data-src="/img/images/hero/home-hero-ava001.jpg" alt="баннер" width="73"
+                        height="73" loading="lazy" decoding="async">
+                </picture>
+            </div>
+            <div class="hero__content-line"></div>
+            <div class="hero__content-item">
+                <div class="hero__content-title">Ялта</div>
+                <div class="hero__content-text">15 минут</div>
+                <picture>
+                    <source srcset="#" data-src="/img/images/hero/home-hero-ava002.webp" type="image/webp">
+                    <img class="image" src="#" data-src="/img/images/hero/home-hero-ava002.jpg" alt="баннер" width="73"
+                        height="73" loading="lazy" decoding="async">
+                </picture>
+            </div>
+            <div class="hero__content-line"></div>
+            <div class="hero__content-item">
+                <div class="hero__content-title">Севастополь</div>
+                <div class="hero__content-text">1,5 часа</div>
+                <picture>
+                    <source srcset="#" data-src="/img/images/hero/home-hero-ava003.webp" type="image/webp">
+                    <img class="image" src="#" data-src="/img/images/hero/home-hero-ava003.jpg" alt="баннер" width="73"
+                        height="73" loading="lazy" decoding="async">
+                </picture>
+            </div>
+
         </div>
     </div>
 </section>
