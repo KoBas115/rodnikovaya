@@ -1,6 +1,8 @@
 .hero {
     position: relative;
-    height: 100vh;
+    height: 100vh; /* Fallback */
+    height: calc(var(--vh, 1vh) * 100); /* JS */
+    height: 100dvh; /* Современный способ */
     min-height: 320px;
     max-height: 1400px;   
 }
@@ -165,7 +167,9 @@
     transform: translate3d(-50%, 0, 4px);
     width: 100%;
     max-width: 930px;
-    margin-top: 30vh;
+    height: 20vh; /* Fallback */
+    height: calc(var(--vh, 1vh) * 20); /* JS */
+    margin-top: 20dvh;
     color: var(--color-2);
     text-shadow: 0px 4px 9px rgb(0 0 0 / 20%);
     padding-left: 16px;

@@ -1,4 +1,118 @@
 .info {
-    height: 873px;
     background-color: var(--color-2);
+    color: var(--color-1);
+    padding: 69px 0 62px;
+    position: relative;
+    @include from-smartphone {
+        padding: 69px 0 153px;
+    }
+    @include from-tablet {
+        padding: 69px 0 210px;
+    }
+    @include from-laptop {
+        padding: 114px 0 153px;
+    }
+}
+.info__image-bg {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    transform: translateZ(1px);
+    z-index: 1;
+    .image {
+        object-fit: cover;
+        object-position: 48%;
+        @include from-smartphone {
+            object-position: 57%;
+        }
+        @include from-fablet {
+            object-position: 78%;
+        }
+        @include from-tablet {
+            object-position: 75%;
+        }
+        @include from-notebook {
+            object-position: right;
+        }
+    }
+}
+.info__container {
+    position: relative;
+    transform: translateZ(2px);
+    z-index: 2;
+}
+.info__row {
+    display: flex;    
+}
+.info__item {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 16px 16px 18px;
+    width: 160px; 
+    @include from-smartphone {
+        width: 192px;
+    }
+    @include from-fablet {
+        width: 230px;
+    }
+    @include from-tablet {
+        width: 242px;
+        padding: 18px 18px 18px 24px;
+    }
+    @include from-desktop {
+        width: 320px;
+        padding: 24px 24px 24px 32px;
+    }
+} 
+.info__item:nth-child(1) {
+    border-right: 1px solid var(--color-1);
+    border-bottom: 1px solid var(--color-1);
+}
+.info__item:nth-child(2) {
+    border-bottom: 1px solid var(--color-1);
+}
+.info__row:nth-child(3) {
+    flex-direction: column;
+    .info__item:nth-child(2) {
+        border-right: 1px solid var(--color-1);
+    }
+    @include from-tablet {
+        flex-direction: row;
+        .info__item {
+            border-bottom: 1px solid transparent;
+        }
+        .info__item:nth-child(2) {
+            border-right: 1px solid transparent;
+        }
+    }
+}
+.info__item-title {
+    margin-top: 6px;
+    font-family: var(--font-family-2);
+    font-weight: 400;
+    font-size: var(--font-size-big-semi);
+    color: var(--color-4);
+    line-height: 132.8%;
+    @include from-fablet {
+        margin-top: 2px;
+        font-size: var(--font-size-giant);
+    }
+}
+.info__item-text {
+    margin-top: 4px;
+    line-height: 136%;
+    @include from-fablet {
+        margin-top: 8px;
+    }
+}
+.info__item-icon {
+    width: 36px;
+    height: 36px;
+    margin-left: auto;
+    @include from-fablet {
+        width: 60px;
+        height: 60px;
+    }
 }
