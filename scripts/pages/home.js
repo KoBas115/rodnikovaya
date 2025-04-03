@@ -14,4 +14,8 @@ const heroSlider = new Swiper(".hero-slider .swiper", {
     autoplay: {
         delay: 5000,
     },
+    pagination: {
+        el: ".hero__content .slider-pagination",
+        clickable: true,
+    }
 });

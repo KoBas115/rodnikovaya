@@ -64,3 +64,25 @@
     cursor: auto;
     pointer-events: none;
 }
+/* ----- pagination ----- */
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background-color: var(--color-6);
+    opacity: 0.3;
+    transition: all .2s ease;
+}
+.swiper-pagination-bullet-active {
+    opacity: 1;
+}
+.swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
+    @media (hover: hover) {
+        &:hover {
+            background-color: var(--color-4);
+            opacity: .7;
+        }
+    }
+}
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 7.5px 0;
+}

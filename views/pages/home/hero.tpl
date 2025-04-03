@@ -44,7 +44,7 @@
                 </div>
             </div>
         </div>
-        {* <div class="slider-pagination"></div> *}
+
     </div>
 
 
@@ -80,7 +80,7 @@
                         height="73" loading="lazy" decoding="async">
                 </picture>
             </div>
-
         </div>
+        <div class="slider-pagination"></div>
     </div>
 </section>
