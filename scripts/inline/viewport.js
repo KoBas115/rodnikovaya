@@ -7,7 +7,7 @@ function setViewport() {
         weInChange = true;
 
         let windowWidth = Math.min($(window).width(), window.screen.width),
-            minWidth = 360,
+            minWidth = 320,
             ratio = windowWidth / minWidth,
             scrollPosition = $(window).scrollTop();
 

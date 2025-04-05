@@ -19,8 +19,9 @@
     position: absolute;
     top: 0;
     width: 100%;
-    transform: translateZ(1px);
-    z-index: 1;
+    transform: translateZ(10px);
+    z-index: 10;
+    pointer-events: none;
     .image {
         object-fit: cover;
         object-position: 48%;
@@ -44,7 +45,11 @@
     z-index: 2;
 }
 .info__row {
-    display: flex;    
+    display: flex;
+    margin: 0 -16px;
+    @include from-fablet {
+        margin: 0;
+    }
 }
 .info__item {
     display: flex;

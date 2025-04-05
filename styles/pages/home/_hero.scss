@@ -90,8 +90,11 @@
 .hero__content-line {
     background: var(--color-3);
     height: 1.5px; 
-    margin: 0 0 29px; 
+    margin: 0 -8px 29px; 
     width: 100%;
+    @include from-smartphone {
+        margin: 0 0 29px;  
+    }
     @include from-tablet {
         margin: 0 32px 34px; 
     }
@@ -136,6 +139,7 @@
     font-size: var(--font-size-small-maxi);
     color: var(--color-4);
     text-align: center;
+    letter-spacing: 2px;
     @include from-tablet {
         font-size: var(--font-size-medium-mini);
     }

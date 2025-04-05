@@ -1,17 +1,177 @@
-// .about {
-//     height: 873px;
-//     background-color: var(--color-2);
-//     color: var(--color-1);
-//     padding: 114px 0 153px;
-//     position: relative;
-// }
-// .about__image-bg {
-//     height: 100%;
-//     left: 0;
-//     position: absolute;
-//     top: 0;
-//     width: 100%;
-//     transform: translateZ(1px);
-//     z-index: 1;
-//     object-fit: contain;
-// }
+.about {
+    position: relative;
+    background-color: var(--color-1);
+    color: var(--color-6);    
+    overflow: hidden;
+}
+.about__mask-bg { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate3d(-50%, -50%, 1px);    
+    width: 652px;
+    height: 608px;
+    opacity: 0.2;
+    @include from-fablet {
+        width: 1100px;
+        height: 1026px;
+    }
+    @include from-laptop {
+        width: 2000px;
+        height: 1865px;
+    }
+}
+.about-slider {
+    position: relative;
+    z-index: 2;
+    transform: translateZ(2px);
+    .swiper-slide {
+        height: auto;
+    }
+    .swiper-slide__wrap {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+        @include from-laptop {
+            flex-direction: row;
+            justify-content: initial;
+        }
+        @include from-desktop {
+            height: 700px;
+        }   
+    }
+    .swiper-slide__left {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 30px 16px;
+        @include from-fablet {
+            padding: 48px 36px;
+        }
+        @include from-tablet {
+            padding: 100px 80px;
+        }  
+        @include from-laptop {
+            width: 50%;
+            padding: 100px 46px;
+        }         
+        @include from-desktop {
+            padding: 0;
+        }         
+    }
+    .swiper-slide__left-wrap {
+        @include from-desktop {
+            max-width: calc(var(--container)/2);
+            padding: 0 122px 0 32px;
+            margin-left: auto;
+        }  
+    }
+    .swiper-slide__right {
+        height: 210px;
+        @include from-smartphone {
+            height: 275px;
+        }
+        @include from-fablet {
+            height: 370px;
+        }
+        @include from-tablet {
+            height: 410px;
+        }
+        @include from-laptop {
+            height: 100%;
+            width: 50%;
+        }
+    } 
+    .swiper-slide__title {
+        margin-bottom: 2px;
+        font-family: var(--font-family-2);
+        font-weight: 400;
+        font-size: var(--font-size-large-mini);
+        line-height: 132%;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        @include from-fablet {
+            font-size: var(--font-size-big);
+        }
+        @include from-laptop {
+            margin-bottom: 20px;
+        }
+        @include from-notebook {
+            font-size: var(--font-size-big-semi);
+        }
+    }
+    .swiper-slide__text {
+        margin-top: 12px;
+        line-height: 126%;
+        letter-spacing: 1px;
+    }
+    .image {
+        object-fit: cover;
+    }
+    .slider-btn__prev {
+        display: none;
+        @include from-tablet {
+            display: flex;
+            position: absolute;
+            z-index: 10;
+            transform: translate3d(-50%, 0, 10px);
+            bottom: 375px;
+            left: calc(50% - 36px);
+        }
+        @include from-laptop {
+            left: 50%;
+            bottom: calc(50% - 36px);
+        }
+    }
+    .slider-btn__next {
+        position: absolute;
+        z-index: 10;
+        transform: translate3d(-50%, 0, 10px);
+        bottom: 175px;
+        left: 50%;
+        @include from-smartphone {
+            bottom: 235px;
+        }
+        @include from-fablet {
+            bottom: 335px;
+        }
+        @include from-tablet {
+            bottom: 375px;
+            left: calc(50% + 36px);
+        }
+        @include from-laptop {
+            left: 50%;
+            bottom: calc(50% + 36px);
+        }
+    }
+    .swiper-pagination {
+        position: absolute;
+        z-index: 10;
+        transform: translate3d(0, 0, 10px);
+        bottom: 12px;
+        right: 16px;
+        top: auto;
+        left: auto;
+        width: fit-content;
+        @include from-laptop {
+            bottom: 52px;
+            right: 52px;
+        }
+    }
+    .slider-cnt-big {
+        font-family: var(--font-family-2);
+        font-weight: 400;
+        font-size: var(--font-size-big-semi);
+        line-height: 132%;
+    }
+    .slider-cnt-small {
+        font-family: var(--font-family-1);
+        font-weight: 400;
+        font-size: var(--font-size-medium);
+        line-height: 126%;
+        opacity: 0.5;
+    }
+}
