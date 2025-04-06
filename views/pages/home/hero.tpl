@@ -46,7 +46,7 @@
         </div>
     </div>
     <div class="container hero__content">
-        <a class="btn btn-default btn-gold-gold-blue-blue hero__btn" href="/podbor">Подобрать квартиру</a>
+        <a class="btn btn-default btn-gold-gold-blue-blue hero__btn" href="/">Подобрать квартиру</a>
         <div class="hero__content-wrap g-lazy-img">
             <div class="hero__content-item">
                 <div class="hero__content-title">Симферополь</div>

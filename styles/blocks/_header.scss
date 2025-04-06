@@ -1,106 +1,179 @@
 .header {
-    height: 110px;
-    background-color: var(--color-2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transform: translate3d(0, 0, 100px);
+    width: 100%;
+    padding: 8px 0;
+    transition: all 0.3s;
+    @include from-tablet {
+        padding: 16px 0;
+    }
 }
-
-// .header {
-//     position: fixed;
-//     top: 0;
-//     left: 50%;
-//     transform: translateX(-50%);
-//     display: flex;
-//     width: 100%;
-//     z-index: 100;
-//     max-width: 1920px;
-//     justify-content: space-between;
-//     align-items: center; 
-// }
-
-// .container-header {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-// }
-
-// .header__phone {
-//     display: none;
-//     color: var(--white-main);
-//     order: 3;
-//     @include from-notebook {
-//         order: 2;
-//         display: block;
-//     }
-// }
-
-// .header__logo {
-//     width: 64px;
-//     height: 47px;
-//     order: 2;
-//     @include from-tablet {
-//         width: 122px;
-//         height: 89px;
-//     }
-//     @include from-notebook {
-//         order: 3;
-//     }
-// }
-
-// .header__logo-gold {
-//     @include from-notebook {
-//         width: 98px;
-//         height: 71px;
-//     }
-// }
-
-// .header__burger {
-//     width: 35px;
-//     height: 18px;
-//     order: 1;
-//     stroke: var(--white-main);
-//     cursor: pointer;
-// }
-
-// .header__btn {
-//     display: none;
-//     @include from-notebook {
-//         display: inline-flex;
-//         order: 4;
-//     }
-// }
-
-// .header__phone-icon-link {
-//     order: 3;
-//     @include from-notebook {
-//         display: none;
-//     }
-// }
-
-// .header__phone-icon {
-//     width: 20px;
-//     height: 20px;
-//     stroke: var(--white-main);
-// }
-
-// .header.active {
-//     background-color: var(--white-main);
-//     .header__btn {
-//         background-color: var(--gold);
-//         &:hover {
-//             background-color: var(--white-main);
-//             color: var(--gold);
-//             border: 1px solid var(--gold);
-//         }
-//     }
-//     .header__burger {
-//         width: 35px;
-//         height: 18px;
-//         order: 1;
-//         stroke: var(--gold)
-//     }
-//     .header__phone {
-//         color: var(--gold);
-//     }
-//     .header__phone-icon {
-//         stroke: var(--gold);
-//     }
-// }
+.header.header__white {
+    background-color: var(--color-6);
+    transition: all 0.3s;
+    box-shadow: 6px 3px 19px 0px #0000004d;
+    @include from-tablet {
+        padding: 13px 0;
+    }
+}
+.header-wrap {
+    width: 100%;
+    height: 47px;
+    position: relative;
+    transition: all 0.3s;
+    @include from-tablet {
+        height: 110px;
+    }
+}
+.header__white .header-wrap {
+    transition: all 0.3s;
+    @include from-tablet {
+        height: 71px;
+    }
+}
+.header-menu {
+    position: absolute;
+    z-index: 1;
+    transform: translate3d(0, 0, 1px);
+    top: 4px;
+    left: 0;
+    width: 34px;
+    height: 34px;
+    &__icon {
+        width: 100%;
+        height: 100%;
+        stroke: var(--color-6);
+        transition: all 0.3s;
+    }
+    @media (hover: hover) {
+        &:hover {
+            .header-menu__icon {
+                stroke: var(--color-1);
+                transition: all 0.3s;
+            }
+        }
+    }   
+    @include from-tablet {
+        width: 42px;
+        height: 42px;
+        top: 13px;
+    }
+}
+.header__white .header-menu {
+    &__icon {
+        stroke: var(--color-4);
+        transition: all 0.3s;
+    }
+}
+.header-phone {
+    position: absolute;
+    z-index: 1;
+    transform: translate3d(0, 0, 1px);
+    top: 9px;
+    right: 0;
+    width: fit-content;
+    @media (hover: hover) {
+        &:hover {
+            .header-phone__icon {
+                stroke: var(--color-1);
+                transition: all 0.3s;
+            }
+        }
+    }   
+    @include from-tablet {
+        display: block;
+        top: 23px;
+        left: 100px;
+    }
+    @include from-laptop {
+        left: 136px;
+    }
+}
+.header-phone__num {
+    display: none;
+    @include from-tablet {
+        display: block;        
+        font-family: var(--font-family-1);
+        font-weight: 600;
+        font-size: var(--font-size-medium);
+        line-height: 126%;
+        color: var(--color-6);
+        letter-spacing: 1px;
+        &:hover {
+            color: var(--color-1);
+            transition: all 0.3s;
+        }
+    }
+}
+.header__white .header-phone__num {
+    color: var(--color-4);
+    transition: all 0.3s;
+}
+.header-phone__icon {
+    width: 24px;
+    height: 24px;
+    stroke: var(--color-6);
+    pointer-events: none;
+    transition: all 0.3s;
+    @include from-tablet {
+        display: none;
+    }
+}
+.header__white .header-phone__icon {
+    stroke: var(--color-4);
+    transition: all 0.3s;
+}
+.header-logo {
+    position: absolute;
+    z-index: 1;
+    transform: translate3d(-50%, 0, 1px);
+    top: 0;
+    left: 50%;
+    width: 64px;
+    height: 47px;
+    transition: all 0.3s;
+    .header-logo__icon {
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        fill: var(--color-6);
+    }
+    @media (hover: hover) {
+        &:hover {
+            .header-logo__icon {
+                fill: var(--color-1);
+                transition: all 0.3s;
+            }
+        }
+    }    
+    @include from-tablet {
+        width: 152px;
+        height: 110px;
+    }
+}
+.header__white .header-logo {
+    @include from-tablet {
+        width: 98px;
+        height: 71px;
+        transition: all 0.3s;
+    }
+}
+.header__white .header-logo__icon {
+    fill: var(--color-4);
+    transition: all 0.3s;
+}
+.header__btn {
+    display: none;
+    @include from-tablet {
+        display: flex;
+        position: absolute;
+        z-index: 1px;
+        transform: translate3d(0, 0, 1px);
+        top: 7px;
+        right: 0;
+        width: 213px;
+    }
+}

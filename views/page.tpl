@@ -46,7 +46,7 @@
 
     {* {include "blocks/burger.tpl"} *}
 
-    {* {include "blocks/header.tpl" class= "page__header page__header_{$page->eng}"} *}
+    {include "blocks/header.tpl" class= "page__header page__header_{$page->eng}"}
 
     {* Основной контент страницы *}
     <main class="{$page->eng} page__main page__main_{$page->eng}">

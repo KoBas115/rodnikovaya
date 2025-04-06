@@ -1,13 +1,37 @@
 import { arcticmodal_settings } from "../functions/modal";
 
+
+/* --------------------- Header ------------------------------------  */
+
+$(document).scroll(function (e) {
+    e.preventDefault();
+    // if ($(".header__search-wrap").hasClass("visible")) unvisibleSearch();
+
+    if ($(this).scrollTop() > 0 & !$(".header").hasClass("header__white")) {
+        $(".header").addClass("header__white");
+        $(".header__btn").removeClass("btn-white-trans-blue-blue").addClass("btn-gold-gold-blue-blue");
+    } else if ($(this).scrollTop() == 0 & $(".header").hasClass("header__white")) {
+        $(".header").removeClass("header__white");
+        $(".header__btn").removeClass("btn-gold-gold-blue-blue").addClass("btn-white-trans-blue-blue");
+    }
+});
+
+/* --------------------- Блок Hero ------------------------------------  */
+
+/**
+ * Функция вычитает из vh высоту браузера в мобильной версии. Для старых браузеров,
+ * которые не воспринимают dvh.
+ * css: 
+ * height: 100vh; - Fallback 
+ * height: calc(var(--vh, 1vh) * 100); - JS
+ * height: 100dvh; - Современный способ
+ */
 function setVH() {
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
 }
 setVH();
 window.addEventListener('resize', setVH);
-
-/* --------------------- Блок Hero ------------------------------------  */
 
 const heroSlider = new Swiper(".hero-slider .swiper", {
     roundLengths: true,
@@ -55,9 +79,11 @@ const aboutSlider = new Swiper(".about-slider .swiper", {
     },
 });
 
+/**
+ * Функция счётчика слайдера about.
+ */
 function updateFraction(slider) {
     const { params, activeIndex } = slider;
-
     slider.$el
         .find(`.${params.pagination.currentClass}`)
         .text(`${activeIndex + 1} - ${activeIndex + params.slidesPerView}`);

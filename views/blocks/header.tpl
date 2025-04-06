@@ -1,13 +1,17 @@
 <header class="header">
-    <h2>header</h2>
-</header>
-
-{* <header class="header">
-    <div class="container container-header">
-        {include "views/blocks/components/icon.tpl" icon=["class" => "header__burger", "name" => "burger"]}
-        <a class="header__phone">8-800-707-52-27</a>
-        <img class="header__logo" src="/img/svg/logo-white.svg" alt="логотип">
-        <button class="btn js-request header__btn" data-h="Оставить заявку" data-from="кнопка оставить заявку в хедере">Оставить заявку</button>
-        <a class="header__phone-icon-link" href="{$phone->link}">{include "views/blocks/components/icon.tpl" icon=["class" => "header__phone-icon", "name" => "phone"]}</a>
+    <div class="container">
+        <div class="header-wrap">
+            <button class="btn header-menu" type="button">
+                {include "components/icon.tpl" icon=["file" => "sprite", "class" => "header-menu__icon", "name" => "burger"]}
+            </button>
+            <a class="link header-phone" href="tel:88007075227">
+                <span class="header-phone__num">8-800-707-52-27</span>
+                {include "components/icon.tpl" icon=["file" => "sprite", "class" => "header-phone__icon", "name" => "phone"]}
+            </a>
+            <a class="link header-logo" href="/">
+                {include "components/icon.tpl" icon=["file" => "sprite", "class" => "header-logo__icon", "name" => "header-logo"]}
+            </a>
+            <a class="btn btn-default btn-white-trans-blue-blue header__btn" href="/">Оставить заявку</a>
+        </div>
     </div>
-</header> *}
+</header>
