@@ -19,7 +19,9 @@
                     <li class="menu-nav__item"><a href="#" class="menu-nav__link">Контакты</a></li>
                 </ul>
                 <a class="link menu-phone" href="tel:88007075227">8-800-707-52-27</a>
-                <a class="btn btn-default btn-white-trans-blue-blue menu__btn" href="#">Заказать звонок</a>
+                <button class="btn btn-default btn-white-trans-blue-blue menu__btn" data-modal="order"
+                    type="button">Заказать
+                    звонок</button>
             </div>
         </div>
     </div>

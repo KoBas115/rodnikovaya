@@ -174,7 +174,7 @@
     @include from-tablet {
         display: flex;
         position: absolute;
-        z-index: 1px;
+        z-index: 1;
         transform: translate3d(0, 0, 1px);
         top: 7px;
         right: 0;

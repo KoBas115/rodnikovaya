@@ -60,12 +60,13 @@
 
     {* Модалки *}
     <!--noindex-->
-    {* <div class="intopModal__wrap" style="display: none">
-        {include "modals/alert.tpl" eng="alert"}
+    <div class="intopModal__wrap" style="display: none">
+        {include "modals/order.tpl" eng="order"}
+        {* {include "modals/alert.tpl" eng="alert"}
         {include "modals/privacy.tpl" eng="privacy"}
         {include "modals/request.tpl" eng="request"}
-        {include "modals/thanks.tpl" eng="thanks"}
-    </div> *}
+        {include "modals/thanks.tpl" eng="thanks"} *}
+    </div>
     <!--/noindex-->
 
     {* Вендорные скрипты *}

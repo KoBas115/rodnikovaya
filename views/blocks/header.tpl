@@ -12,7 +12,9 @@
                 <a class="link header-logo" href="/">
                     {include "components/icon.tpl" icon=["file" => "sprite", "class" => "header-logo__icon", "name" => "header-logo"]}
                 </a>
-                <a class="btn btn-default btn-white-trans-blue-blue header__btn" href="/">Оставить заявку</a>
+                <button class="btn btn-default btn-white-trans-blue-blue header__btn" data-modal="order"
+                    type="button">Оставить
+                    заявку</button>
             </div>
         </div>
     </div>

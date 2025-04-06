@@ -46,3 +46,17 @@
         }
     }
 }
+.btn-gold-gold-white-gold {
+    color: var(--color-2);
+    background-color: var(--color-4);
+    border-color: var(--color-4);
+    @media (hover: hover) {
+        &:hover {
+            background-color: var(--color-6);
+            color: var(--color-4);
+        }
+        &:active {
+            background-color: var(--color-3);
+        }
+    }
+}
