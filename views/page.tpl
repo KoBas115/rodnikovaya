@@ -44,7 +44,7 @@
     {* Основной заголовок страницы *}
     <h1 class="page__h1 visually-hidden">{$page->seo->short}</h1>
 
-    {* {include "blocks/burger.tpl"} *}
+    {include "components/menu.tpl"}
 
     {include "blocks/header.tpl" class= "page__header page__header_{$page->eng}"}
 

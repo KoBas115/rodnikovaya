@@ -144,6 +144,10 @@
         <symbol id="phone" viewBox="0 0 24 24" fill="none">            
             <path d="M20.5727 6.96901C19.0589 13.7192 13.7659 19.034 7.04088 20.558C4.88638 21.0463 3.07254 19.2091 3.07254 17V15.25C3.07254 14.6977 3.52116 14.2547 4.07129 14.206C5.15574 14.1099 6.19585 13.8589 7.16949 13.4751L8.87276 15.1843C11.6431 13.854 13.889 11.6003 15.2147 8.82037L13.5114 7.11118C13.8943 6.13313 14.1445 5.08824 14.24 3.99877C14.2883 3.4486 14.7313 3 15.2836 3H17.0103C19.2194 3 21.0562 4.81342 20.5727 6.96901Z" stroke-linecap="round" stroke-linejoin="round"/>
         </symbol>      
+        <symbol id="closer" viewBox="0 0 19 19">    
+            <path d="M16.625 16.625L2.375 2.375" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M16.625 2.375L2.375 16.625" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>     
+        </symbol>      
         <symbol id="#" viewBox="0 0 0 0" fill="none">            
         </symbol>      
     </defs>

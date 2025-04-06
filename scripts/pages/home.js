@@ -7,11 +7,11 @@ $(document).scroll(function (e) {
     e.preventDefault();
     // if ($(".header__search-wrap").hasClass("visible")) unvisibleSearch();
 
-    if ($(this).scrollTop() > 0 & !$(".header").hasClass("header__white")) {
-        $(".header").addClass("header__white");
+    if ($(this).scrollTop() > 0 & !$(".header__fixed").hasClass("header__white")) {
+        $(".header__fixed").addClass("header__white");
         $(".header__btn").removeClass("btn-white-trans-blue-blue").addClass("btn-gold-gold-blue-blue");
-    } else if ($(this).scrollTop() == 0 & $(".header").hasClass("header__white")) {
-        $(".header").removeClass("header__white");
+    } else if ($(this).scrollTop() == 0 & $(".header__fixed").hasClass("header__white")) {
+        $(".header__fixed").removeClass("header__white");
         $(".header__btn").removeClass("btn-gold-gold-blue-blue").addClass("btn-white-trans-blue-blue");
     }
 });

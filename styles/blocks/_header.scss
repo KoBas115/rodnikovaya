@@ -5,15 +5,18 @@
     z-index: 100;
     transform: translate3d(0, 0, 100px);
     width: 100%;
+}
+.header__fixed {    
+    width: 100%;
     padding: 8px 0;
-    transition: all 0.3s;
+    transition-property: background-color, padding;
+    transition-duration: .3s;	
     @include from-tablet {
         padding: 16px 0;
     }
 }
-.header.header__white {
+.header__fixed.header__white {
     background-color: var(--color-6);
-    transition: all 0.3s;
     box-shadow: 6px 3px 19px 0px #0000004d;
     @include from-tablet {
         padding: 13px 0;
@@ -23,13 +26,13 @@
     width: 100%;
     height: 47px;
     position: relative;
-    transition: all 0.3s;
+    transition: height 0.3s;
     @include from-tablet {
         height: 110px;
     }
 }
 .header__white .header-wrap {
-    transition: all 0.3s;
+    transition: height 0.3s;
     @include from-tablet {
         height: 71px;
     }
@@ -47,6 +50,7 @@
         height: 100%;
         stroke: var(--color-6);
         transition: all 0.3s;
+        pointer-events: none;
     }
     @media (hover: hover) {
         &:hover {
@@ -65,7 +69,7 @@
 .header__white .header-menu {
     &__icon {
         stroke: var(--color-4);
-        transition: all 0.3s;
+        transition: stroke 0.3s;
     }
 }
 .header-phone {
@@ -104,27 +108,27 @@
         letter-spacing: 1px;
         &:hover {
             color: var(--color-1);
-            transition: all 0.3s;
+            transition: color 0.3s;
         }
     }
 }
 .header__white .header-phone__num {
     color: var(--color-4);
-    transition: all 0.3s;
+    transition: color 0.3s;
 }
 .header-phone__icon {
     width: 24px;
     height: 24px;
     stroke: var(--color-6);
     pointer-events: none;
-    transition: all 0.3s;
+    transition: stroke 0.3s;
     @include from-tablet {
         display: none;
     }
 }
 .header__white .header-phone__icon {
     stroke: var(--color-4);
-    transition: all 0.3s;
+    transition: stroke 0.3s;
 }
 .header-logo {
     position: absolute;
@@ -134,7 +138,7 @@
     left: 50%;
     width: 64px;
     height: 47px;
-    transition: all 0.3s;
+    transition: height 0.3s, width 0.3s, fill 0.3s;
     .header-logo__icon {
         width: 100%;
         height: 100%;
@@ -158,12 +162,12 @@
     @include from-tablet {
         width: 98px;
         height: 71px;
-        transition: all 0.3s;
+        transition: height 0.3s, width 0.3s, fill 0.3s;
     }
 }
 .header__white .header-logo__icon {
     fill: var(--color-4);
-    transition: all 0.3s;
+    transition: height 0.3s, width 0.3s, fill 0.3s;
 }
 .header__btn {
     display: none;
