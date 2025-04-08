@@ -92,3 +92,18 @@ function updateFraction(slider) {
         .find(`.${params.pagination.totalClass}`)
         .text(slider.slides.length)
 }
+
+/* --------------------- Блок entrance ------------------------------------  */
+
+const entranceSlider = new Swiper(".entrance-slider .swiper", {
+    roundLengths: true,
+    watchOverflow: true,
+    slidesPerView: 'auto',
+    slidesPerGroup: 1,
+    speed: 1200,
+    spaceBetween: 12,
+    navigation: {
+        nextEl: ".entrance-slider .slider-btn__next",
+        prevEl: ".entrance-slider .slider-btn__prev",
+    }
+});
