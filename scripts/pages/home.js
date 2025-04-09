@@ -107,3 +107,16 @@ const entranceSlider = new Swiper(".entrance-slider .swiper", {
         prevEl: ".entrance-slider .slider-btn__prev",
     }
 });
+
+/* --------------------- Модалка images ------------------------------------  */
+
+// при клике на картинку открыть её в модалке
+$("[data-modal='images']").click(function (e) {
+    $(".images-modal .images__wrap picture").remove();
+    var img = $(this).attr("data-src").split('.').slice(0, -1).join('.');
+    var el = `<picture>
+                <source srcset="${img}.webp" type="image/webp">
+                <img class="image" src="${img}.jpg" alt="image" width="823" height="730">
+            </picture>`;
+    $(".images-modal .images__wrap").append(el);
+});

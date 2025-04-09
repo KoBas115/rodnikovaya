@@ -7,52 +7,52 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <picture>
-                        <source srcset="#" data-src="/img/images/home/mobile-1.webp" media="(max-width: 767px)"
+                        <source srcset="#" data-src="/img/images/home/entance001@1x.webp" media="(max-width: 767px)"
                             type="image/webp">
-                        <source srcset="#" data-src="/img/images/home/mobile-1.jpg" media="(max-width: 767px)">
-                        <source srcset="#" data-src="/img/images/home/desktop-1.webp" type="image/webp">
-                        <img class="image" src="#" data-src="/img/images/home/desktop-1.jpg" alt="about" width="978"
-                            height="700" loading="lazy" decoding="async">
+                        <source srcset="#" data-src="/img/images/home/entance001@1x.jpg" media="(max-width: 767px)">
+                        <source srcset="#" data-src="/img/images/home/entance001@2x.webp" type="image/webp">
+                        <img class="image" src="#" data-src="/img/images/home/entance001@2x.jpg" data-modal="images"
+                            alt="about" width="978" height="700" loading="lazy" decoding="async">
                     </picture>
                 </div>
                 <div class="swiper-slide">
                     <picture>
-                        <source srcset="#" data-src="/img/images/home/mobile-2.webp" media="(max-width: 767px)"
+                        <source srcset="#" data-src="/img/images/home/entance002@1x.webp" media="(max-width: 767px)"
                             type="image/webp">
-                        <source srcset="#" data-src="/img/images/home/mobile-2.jpg" media="(max-width: 767px)">
-                        <source srcset="#" data-src="/img/images/home/desktop-2.webp" type="image/webp">
-                        <img class="image" src="#" data-src="/img/images/home/desktop-2.jpg" alt="about" width="978"
-                            height="700" loading="lazy" decoding="async">
+                        <source srcset="#" data-src="/img/images/home/entance002@1x.jpg" media="(max-width: 767px)">
+                        <source srcset="#" data-src="/img/images/home/entance002@2x.webp" type="image/webp">
+                        <img class="image" src="#" data-src="/img/images/home/entance002@2x.jpg" data-modal="images"
+                            alt="about" width="978" height="700" loading="lazy" decoding="async">
                     </picture>
                 </div>
                 <div class="swiper-slide">
                     <picture>
-                        <source srcset="#" data-src="/img/images/home/mobile-3.webp" media="(max-width: 767px)"
+                        <source srcset="#" data-src="/img/images/home/entance003@1x.webp" media="(max-width: 767px)"
                             type="image/webp">
-                        <source srcset="#" data-src="/img/images/home/mobile-3.jpg" media="(max-width: 767px)">
-                        <source srcset="#" data-src="/img/images/home/desktop-3.webp" type="image/webp">
-                        <img class="image" src="#" data-src="/img/images/home/desktop-3.jpg" alt="about" width="978"
-                            height="700" loading="lazy" decoding="async">
+                        <source srcset="#" data-src="/img/images/home/entance003@1x.jpg" media="(max-width: 767px)">
+                        <source srcset="#" data-src="/img/images/home/entance003@2x.webp" type="image/webp">
+                        <img class="image" src="#" data-src="/img/images/home/entance003@2x.jpg" data-modal="images"
+                            alt="about" width="978" height="700" loading="lazy" decoding="async">
                     </picture>
                 </div>
                 <div class="swiper-slide">
                     <picture>
-                        <source srcset="#" data-src="/img/images/home/mobile-4.webp" media="(max-width: 767px)"
+                        <source srcset="#" data-src="/img/images/home/entance004@1x.webp" media="(max-width: 767px)"
                             type="image/webp">
-                        <source srcset="#" data-src="/img/images/home/mobile-4.jpg" media="(max-width: 767px)">
-                        <source srcset="#" data-src="/img/images/home/desktop-4.webp" type="image/webp">
-                        <img class="image" src="#" data-src="/img/images/home/desktop-4.jpg" alt="about" width="978"
-                            height="700" loading="lazy" decoding="async">
+                        <source srcset="#" data-src="/img/images/home/entance004@1x.jpg" media="(max-width: 767px)">
+                        <source srcset="#" data-src="/img/images/home/entance004@2x.webp" type="image/webp">
+                        <img class="image" src="#" data-src="/img/images/home/entance004@2x.jpg" data-modal="images"
+                            alt="about" width="978" height="700" loading="lazy" decoding="async">
                     </picture>
                 </div>
                 <div class="swiper-slide">
                     <picture>
-                        <source srcset="#" data-src="/img/images/home/mobile-5.webp" media="(max-width: 767px)"
+                        <source srcset="#" data-src="/img/images/home/entance005@1x.webp" media="(max-width: 767px)"
                             type="image/webp">
-                        <source srcset="#" data-src="/img/images/home/mobile-5.jpg" media="(max-width: 767px)">
-                        <source srcset="#" data-src="/img/images/home/desktop-5.webp" type="image/webp">
-                        <img class="image" src="#" data-src="/img/images/home/desktop-5.jpg" alt="about" width="978"
-                            height="700" loading="lazy" decoding="async">
+                        <source srcset="#" data-src="/img/images/home/entance005@1x.jpg" media="(max-width: 767px)">
+                        <source srcset="#" data-src="/img/images/home/entance005@2x.webp" type="image/webp">
+                        <img class="image" src="#" data-src="/img/images/home/entance005@2x.jpg" data-modal="images"
+                            alt="about" width="978" height="700" loading="lazy" decoding="async">
                     </picture>
                 </div>
             </div>

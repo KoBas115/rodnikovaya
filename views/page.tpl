@@ -62,6 +62,7 @@
     <!--noindex-->
     <div class="intopModal__wrap" style="display: none">
         {include "modals/order.tpl" eng="order"}
+        {include "modals/images.tpl" eng="images"}
         {* {include "modals/alert.tpl" eng="alert"}
         {include "modals/privacy.tpl" eng="privacy"}
         {include "modals/request.tpl" eng="request"}
