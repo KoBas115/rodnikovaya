@@ -120,3 +120,30 @@ $("[data-modal='images']").click(function (e) {
             </picture>`;
     $(".images-modal .images__wrap").append(el);
 });
+
+/* --------------------- Блок Safety ------------------------------------  */
+
+const safetySlider = new Swiper(".safety-slider .swiper", {
+    slidesPerView: 'auto',
+    touchRatio: 0,
+    speed: 0,
+    loop: true,
+    loopedSlides: 3,
+    spaceBetween: 0,
+    allowTouchMove: false,
+    navigation: {
+        nextEl: ".safety-slider .slider-btn__next",
+        prevEl: ".safety-slider .slider-btn__prev",
+    },
+    pagination: {
+        el: '.safety-slider .swiper-pagination',
+        type: 'fraction',
+        clickable: true,
+        renderFraction: (currentClass, totalClass) => `
+        <span class="slider-cnt-big">0</span>
+        <span class="${currentClass} slider-cnt-big"></span>
+        <span class="slider-cnt-big">/</span>
+        <span class="slider-cnt-small">0</span>
+        <span class="${totalClass} slider-cnt-small"></span>`,
+    },
+});
